@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/futurabookc-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+body {
+    background-image: url('../images/bg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header {
+    
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 5vh;
+    // height: 4.5vh;
+
+    .logo-container {
+        position: relative;
+        display: inline-block;
+        margin: 0 0.1vw; // Maintains the gap between logos
+
+        .logo{
+            display: block;
+            width: 2.5vw;
+        }
+    }
+
+    .signup-container {
+        font-family: 'FuturaBookC', sans-serif;
+        font-weight:800;
+        // line-height: 3;
+        border: 3px solid white;
+        color: white;
+        border-radius: 6px;
+        padding: 10px 10px 20px 20px;
+       }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+} 
